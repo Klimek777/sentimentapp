@@ -7,7 +7,7 @@
    Aplikacja `TweetThoughts` ma na celu przeprowadzić analizę sentymentu 100 ostatnich tweetów zawierających słowo wpisane przez użytkownika. Backend aplikacji napisany jest w języku Python, używa bibliotek takich jak `snscrape.modules.twitter`, `pandas`, `transformers - AutoTokenizer`, `AutoModelForSequenceClassification`, `scipy.special - softmax`, `flask - request`, `flask`, `flask_cors - CORS`. Do frontendu użyto technologii Flutter umożliwiającej działanie webowe jak i aplikacje mobilne.
 
 ## 2. Prawa autorskie:
-- Autorzy: Aplikacja została stworzona przez zespół programistów z firmy XYZ.
+- Autorzy: Aplikacja została stworzona przez zespół studentów z UG.
 - Warunki licencyjne do oprogramowania wytworzonego przez grupę: MIT
 
 ## 3. Specyfikacja wymagań:
@@ -35,7 +35,7 @@
    The `TweetThoughts` application aims to analyze the sentiment of the latest 100 tweets containing a word entered by the user. The backend of the application is written in Python and uses libraries such as `snscrape.modules.twitter`, `pandas`, `transformers - AutoTokenizer`, `AutoModelForSequenceClassification`, `scipy.special - softmax`, `flask - request`, `flask`, `flask_cors - CORS`. The frontend is built using Flutter technology, allowing for both web-based and mobile applications.
 
 ## 2. Copyright:
-- Authors: The application was developed by a team of programmers from XYZ company.
+- Authors: The application was developed by a group of students from University of Gdansk.
 - Licensing terms for software developed by the group: MIT
 
 ## 3. Requirements Specification:
