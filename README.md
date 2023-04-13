@@ -1,5 +1,10 @@
 # PL Dokumentacja 
 
+## Prezentacja
+
+![sentiment_mockup](https://user-images.githubusercontent.com/90191027/231772360-91537aff-3df4-463b-8d78-877852df7371.png)
+
+
 ## 1. Charakterystyka oprogramowania:
 - Nazwa skrócona: `TweetThoughts`
 - Nazwa pełna: `Aplikacja do analizy sentymentu tweetów`
