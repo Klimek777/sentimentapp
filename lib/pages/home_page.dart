@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget _homePageTitle() {
     return Text(
-      '#Check the current sentiment of latest tweets!#',
+      '#Check the sentiment of your favourite subreddit!#',
       textAlign: TextAlign.center,
       style: TextStyle(
           color: Colors.white,
@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(0)),
             filled: true,
             fillColor: Colors.white,
-            hintText: "#BITCOIN",
+            hintText: "#WALLSTREETBETS",
             hintStyle: TextStyle(fontWeight: FontWeight.normal)),
       ),
     );
@@ -112,6 +112,8 @@ class _HomePageState extends State<HomePage> {
               // Navigate to the result page and pass the data as arguments
               Navigator.pushNamed(context, 'result',
                   arguments: {'data': data, 'searchQuery': searchQuery});
+            } else if (response.statusCode == 500) {
+              Navigator.pushNamed(context, 'error');
             } else {
               // Handle the error
               print('Request failed with status: ${response.statusCode}.');

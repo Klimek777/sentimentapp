@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sentimentapp/pages/error_page.dart';
 import 'package:sentimentapp/pages/home_page.dart';
 import 'package:sentimentapp/pages/result_page.dart';
 
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
           'result': (context) => ResultPage(
                 data: 'lol',
                 searchQuery: '',
-              )
+              ),
+          'error': (context) => NoSubPage()
         });
   }
 }

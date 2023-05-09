@@ -78,7 +78,7 @@ class _ResultPageState extends State<ResultPage> {
         ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
     final String searchQuery = arguments['searchQuery'] as String;
     return Text(
-      searchQuery,
+      '# ' + searchQuery + ' #',
       style: TextStyle(
           color: Colors.white, fontWeight: FontWeight.bold, fontSize: 50),
     );
