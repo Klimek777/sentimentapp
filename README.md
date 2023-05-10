@@ -9,7 +9,7 @@
 - Nazwa skrócona: `RedditThoughts`
 - Nazwa pełna: `Aplikacja do analizy sentymentu 100 trendujących tytułów w danym subbredicie`
 - Krótki opis z wskazaniem celów: 
-   Aplikacja `RedditThoughts` ma na celu przeprowadzić analizę sentymentu 100 ostatnich tytułów postów w subreddicie wyszukanym przez słowo wpisane przez użytkownika. Backend aplikacji napisany jest w języku Python, używa bibliotek takich jak `praw`, `pandas`, `transformers - AutoTokenizer`, `AutoModelForSequenceClassification`, `scipy.special - softmax`, `flask - request`, `flask`, `flask_cors - CORS`. Do frontendu użyto technologii Flutter umożliwiającej działanie webowe jak i aplikacje mobilne.
+   Aplikacja `RedditThoughts` ma na celu przeprowadzić analizę sentymentu 100 ostatnich tytułów postów w subreddicie wyszukanym przez słowo wpisane przez użytkownika. Backend aplikacji napisany jest w języku Python, używa bibliotek takich jak `praw`, `transformers - AutoTokenizer`, `AutoModelForSequenceClassification`, `scipy.special - softmax`, `flask - request`, `flask`, `flask_cors - CORS`. Do frontendu użyto technologii Flutter umożliwiającej działanie webowe jak i aplikacje mobilne.
 
 ## 2. Prawa autorskie:
 - Autorzy: Aplikacja została stworzona przez zespół studentów z UG.
