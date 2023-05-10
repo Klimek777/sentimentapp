@@ -19,7 +19,7 @@
 ### Funkcjonalne:
 | Identyfikator | Nazwa | Opis | Priorytet | Kategoria |
 | --- | --- | --- | --- | --- |
-| `FR-001` | Wyszukiwanie subredditów | Użytkownik może wpisać wyrażenie, na podstawie którego chce znaleźć ostatnie 100 tytułów na danym subreddicie. | `1` | Funkcjonalne |
+| `FR-001` | Wyszukiwanie tytułów subredditów | Użytkownik może wpisać wyrażenie, na podstawie którego chce znaleźć ostatnie 100 tytułów na danym subreddicie. | `1` | Funkcjonalne |
 | `FR-002` | Analiza sentymentu | Aplikacja powinna wykrywać sentyment trendujących tytułów (pozytywny, neutralny, negatywny). | `1` | Funkcjonalne |
 | `FR-003` | Wyświetlanie wyników | Aplikacja powinna wyświetlać wyniki analizy sentymentu w formie procentowej oraz w postaci wykresu. | `1` | Funkcjonalne |
 
