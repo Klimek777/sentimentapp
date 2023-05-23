@@ -28,22 +28,22 @@
 | --- | --- | --- | --- | --- |
 | `NFR-001` | Bezpieczeństwo danych | Aplikacja musi chronić dane użytkowników przed nieautoryzowanym dostępem. | `1` | Poza funkcjonalne |
 | `NFR-002` | Czas odpowiedzi | Aplikacja powinna działać szybko i bezproblemowo. | `2` | Poza funkcjonalne |
-| `NFR-003` | Dostępność | Aplikacja powinna być dostępna dla użytkowników korzystających z różnych urządzeń oraz przeglądarek internetowych. | `2` | Poza funkcjonalne |
+| `NFR-003` | Dostępność | Aplikacja powinna być dostępna dla użytkowników korzystających z różnych urządzeń oraz przeglądarek internetowych. | `2` | Pozafunkcjonalne |
 ## 4. Architektura rozwoju
 
-Aplikacja `RedditThoughts` została podzielona na stronę backend obłsugującą logikę biznesową i łączącą się z api aplikacji Reddit i stronę frontend zapewniającą wyświetlanie widoków dla użytkownika. 
+Aplikacja `RedditThoughts` została podzielona na stronę backend obsługującą logikę biznesową i łączącą się z api aplikacji Reddit i stronę frontend zapewniającą wyświetlanie widoków dla użytkownika. 
 
-Do obsługi strony backendowej został użyty język `python + flask`, umożliwiający uruchamianie skryptu jako serwer. Do strony frontendowej został wykorzysytany `framework Fluttter`. 
+Do obsługi strony backendowej został użyty język `python + flask`, umożliwiający uruchamianie skryptu jako serwer. Do strony frontendowej został wykorzysytany `framework Flutter`. 
 
 Strona frontendowa wysyła rządania bezpośrednio na adres pod którym uruchomiony jest serwer flask ze skryptem umożliwiającym obliczanie analizy sentymentu dla wybrnaego subreddita na platformie Reddit. 
 
-Analiza sentymentu obliczana jest dla 100 najbardziej trendujących wpisów w danym subbreddicie dla ostatniego tygodnia od momentu wysłania rządania. 
+Analiza sentymentu obliczana jest dla 100 najbardziej trendujących wpisów w danym subreddicie dla ostatniego tygodnia od momentu wysłania rządania. 
 
 Obliczona analiza zwracana jest do powłoki frontendowej, gdzie przedstawiana jest użytkownikowi w formie wykresów i licznika. Wykres pokazuje jaki procent stanowią wyrażenia negatywne, neutralne i pozytywne. Natomiast miara licznika oscyluje w granicach -1 i 1. Wynik licznika obliczany jest ze wzoru `((pozytywny sentyment - negatywny sentyment)/( pozytywny sentyment + negatywny sentyment))`
 
 ## 5. Architektura uruchomieniowa
 Aby uruchomić projekt `RedditThoughts` musimy posiadać zainstalowane następujące technologie: `Flutter + Dart` `Python 3.11.3 ` `Flask 2.3.1` następnie należy podjąć poniższe kroki:
-   1. Po porbraniu projektu z GitHub należy otworzyć go w dwóch oknach naszego IDE np. `Visual Studio Code`.
+   1. Po pobraniu projektu z GitHub należy otworzyć go w dwóch oknach naszego IDE np. `Visual Studio Code`.
    2. W jednym oknie uruchamiamy plik `main.dart` za pomocą komendy `flutter run`, który powinien wygenerować nam główny interface naszej aplikacji. W przypadku       gdyby projekt nie uruchamiał się prawidłowo należy posłużyć się komendą `flutter pub get` i uruchomić projekt ponownie. 
    3. W odrębym oknie uruchamiamy ten sam projekt, natomiast za pomocą terminala przenosimy się do folderu `redidit_api`. 
    4. Przed włączeniem programu `app.py` konieczne jest zaimportowanie poszczególnych bibliotek.
@@ -55,7 +55,7 @@ Aby uruchomić projekt `RedditThoughts` musimy posiadać zainstalowane następuj
       - `flask.cors` -> `pip install flask-cors`
       
    6. W folderze `redidit_api` należy utworzyć plik `secrets_1.py`.  W nim zaś musimy zainicjować 3 zmienne `client_id` `client_secret` `user_agent` w celu           uzyskania dostępu do `API Reddit`. 
-   7. Po spełnieniu wszytskich powyższych wytycznych, za pośrednictwem komendy `python -m flask run ` uruchamiamy server.
+   7. Po spełnieniu wszystkich powyższych wytycznych, za pośrednictwem komendy `python -m flask run ` uruchamiamy server.
 ## 6. Testy
 W ramach sprawdzenia prawidłowego funkcjonowania aplikacji przeprowadzone zostały następujące testy.
 
