@@ -37,4 +37,4 @@ Aby uruchomić projekt `RedditThoughts` musimy posiadać zainstalowane następuj
    4. Przed włączeniem programu `app.py` konieczne jest zaimportowanie poszczególnych bibliotek.
    5. Biblioteki niezbędne do prawidłowego funkcjonowania aplikacji to: `praw` -> `pip install praw`, `transformers`-> `pip install tranformers`, `scipy.special` -> `pip install scipy` , `flask` -> `pip install flask` , `flask.cors` -> `pip install flask-cors`.
    6. Po pobraniu wszystkich potrzebnych bibliotek, za pośrednictwem komendy `python -    m flask run ` uruchamiamy server.
-  
+## 5. Testy
