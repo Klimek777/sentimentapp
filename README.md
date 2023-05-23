@@ -39,7 +39,7 @@ Strona frontendowa wysyła rządania bezpośrednio na adres pod którym uruchomi
 
 Analiza sentymentu obliczana jest dla 100 najbardziej trendujących wpisów w danym subbreddicie dla ostatniego tygodnia od momentu wysłania rządania. 
 
-Obliczona analiza zwracana jest do powłoki frontendowej, gdzie przedstawiana jest użytkownikowi w formie wykresów i licznika. Wykres pokazuje jaki procent stanowią wyrażenia negatywne, neutralne i pozytywne. Natomiast miara licznika oscyluje w granicach -1 i 1. Obliczany na niej sentyment obliczany jest ze wzoru `((pozytywny sentyment - negatywny sentyment)/( pozytywny sentyment + negatywny sentyment))`
+Obliczona analiza zwracana jest do powłoki frontendowej, gdzie przedstawiana jest użytkownikowi w formie wykresów i licznika. Wykres pokazuje jaki procent stanowią wyrażenia negatywne, neutralne i pozytywne. Natomiast miara licznika oscyluje w granicach -1 i 1. Wynik licznika obliczany jest ze wzoru `((pozytywny sentyment - negatywny sentyment)/( pozytywny sentyment + negatywny sentyment))`
 
 ## 5. Architektura uruchomieniowa
 Aby uruchomić projekt `RedditThoughts` musimy posiadać zainstalowane następujące technologie: `Flutter + Dart` `Python 3.11.3 ` `Flask 2.3.1` następnie należy podjąć poniższe kroki:
