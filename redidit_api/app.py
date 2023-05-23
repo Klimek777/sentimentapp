@@ -1,3 +1,4 @@
+import secrets_1
 import praw
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from scipy.special import softmax
@@ -7,7 +8,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 cors = CORS(app)
 
-@app.route("/test")
+@app.route("/")
 def test():
     query = request.args.get("query", default="business")
     reddits = []
@@ -17,11 +18,11 @@ def test():
     tokenizer = AutoTokenizer.from_pretrained(roberta)
     labels = ['Negative', 'Neutral', 'Positive']
 
-    reddit = praw.Reddit(client_id='b7pGKmT-Fb3z3XVbln3_DQ',
-                         client_secret='j35G5yTADIeGQMbyjnFYe0xth89TBg',
-                         user_agent='Least_Leader_9637')
+    reddit = praw.Reddit(client_id=secrets_1.client_id,
+                         client_secret=secrets_1.client_secret,
+                         user_agent=secrets_1.user_agent)
 
-    top_posts = reddit.subreddit(query).top('week', limit=5)
+    top_posts = reddit.subreddit(query).top('week', limit=100)
 
     for submission in top_posts:
         reddits.append(submission.title)

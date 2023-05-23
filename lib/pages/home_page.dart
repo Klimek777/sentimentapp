@@ -25,10 +25,6 @@ class _HomePageState extends State<HomePage> {
 
     return SafeArea(
         child: Scaffold(
-      // appBar: AppBar(
-      //   title: Row(children: [Text("LOGO")]),
-      //   backgroundColor: Colors.grey,
-      // ),
       backgroundColor: Color.fromARGB(255, 210, 210, 210),
       body: Padding(
         padding: const EdgeInsets.all(60),
@@ -102,8 +98,7 @@ class _HomePageState extends State<HomePage> {
               _isLoading = true;
             });
             String searchQuery = textEditingController.text;
-            Uri apiUrl =
-                Uri.parse('http://127.0.0.1:5000/test?query=$searchQuery');
+            Uri apiUrl = Uri.parse('http://127.0.0.1:5000/?query=$searchQuery');
             http.Response response = await http.get(apiUrl);
             if (response.statusCode == 200) {
               // Convert the response body from JSON to a Map
@@ -112,6 +107,7 @@ class _HomePageState extends State<HomePage> {
               // Navigate to the result page and pass the data as arguments
               Navigator.pushNamed(context, 'result',
                   arguments: {'data': data, 'searchQuery': searchQuery});
+              print(data);
             } else if (response.statusCode == 500) {
               Navigator.pushNamed(context, 'error');
             } else {
