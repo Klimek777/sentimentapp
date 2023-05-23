@@ -15,7 +15,7 @@ def test():
     tweets=[]
     limits=20
     tweet_word=[]
-    wynik=0
+    result=0
     roberta = "cardiffnlp/twitter-roberta-base-sentiment"
     model = AutoModelForSequenceClassification.from_pretrained(roberta)
     tokenizer = AutoTokenizer.from_pretrained(roberta)
@@ -49,13 +49,13 @@ def test():
         output = model(**encoded_tweet)
         scores = output[0][0].detach().numpy()
         scores = softmax(scores)
-        wynik += scores
+        result += scores
         # for i in range(len(scores)):
         #     l = labels[i]
         #     s = scores[i]
         #     print(l,s)
 
-    sentiment=wynik/limits
+    sentiment=result/limits
         
     return {
         "Fraza": query,
