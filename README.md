@@ -30,8 +30,11 @@
 | `NFR-002` | Czas odpowiedzi | Aplikacja powinna działać szybko i bezproblemowo. | `2` | Poza funkcjonalne |
 | `NFR-003` | Dostępność | Aplikacja powinna być dostępna dla użytkowników korzystających z różnych urządzeń oraz przeglądarek internetowych. | `2` | Poza funkcjonalne |
 ## 4. Architektura uruchomieniowa
-Aby uruchomić projekt `RedditThoughts` musimy posiadać zainstalowane następujące technologie: `Flutter + Dart` `Python 3.11.3 ` `Flask 2.3.1`, następnie należy podjąć poniższe kroki:
+Aby uruchomić projekt `RedditThoughts` musimy posiadać zainstalowane następujące technologie: `Flutter + Dart` `Python 3.11.3 ` `Flask 2.3.1` następnie należy podjąć poniższe kroki:
    1. Po porbraniu projektu z GitHub należy otworzyć go w dwóch oknach naszego framework'a.
    2. W jednym oknie uruchamiamy plik `main.dart` za pomocą komendy `flutter run`, który powinien wygenerować nam główny interface naszej aplikacji.
-   3. W odrębym oknie uruchamiamy ten sam projekt, natomiast za pomocą terminala przenosimy się do folderu `redidit_api` oraz za pośrednictwem komendy `python -    m flask run ` uruchamiamy server.
+   3. W odrębym oknie uruchamiamy ten sam projekt, natomiast za pomocą terminala przenosimy się do folderu `redidit_api`. 
+   4. Przed włączeniem programu `app.py` konieczne jest zaimportowanie poszczególnych bibliotek.
+   5. Biblioteki niezbędne do prawidłowego funkcjonowania aplikacji to: `praw` -> `pip install praw`, `transformers`-> `pip install tranformers`, `scipy.special` -> `pip install scipy` , `flask` -> `pip install flask` , `flask.cors` -> `pip install flask-cors`.
+   6. Po pobraniu wszystkich potrzebnych bibliotek, za pośrednictwem komendy `python -    m flask run ` uruchamiamy server.
   
