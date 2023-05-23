@@ -31,12 +31,13 @@
 | `NFR-003` | Dostępność | Aplikacja powinna być dostępna dla użytkowników korzystających z różnych urządzeń oraz przeglądarek internetowych. | `2` | Poza funkcjonalne |
 ## 4. Architektura uruchomieniowa
 Aby uruchomić projekt `RedditThoughts` musimy posiadać zainstalowane następujące technologie: `Flutter + Dart` `Python 3.11.3 ` `Flask 2.3.1` następnie należy podjąć poniższe kroki:
-   1. Po porbraniu projektu z GitHub należy otworzyć go w dwóch oknach naszego framework'a.
-   2. W jednym oknie uruchamiamy plik `main.dart` za pomocą komendy `flutter run`, który powinien wygenerować nam główny interface naszej aplikacji.
+   1. Po porbraniu projektu z GitHub należy otworzyć go w dwóch oknach naszego IDE np. `Visual Studio Code`.
+   2. W jednym oknie uruchamiamy plik `main.dart` za pomocą komendy `flutter run`, który powinien wygenerować nam główny interface naszej aplikacji. W przypadku       gdyby projekt nie uruchamiał się prawidłowo należy posłużyć się komendą `flutter pub get` i uruchomić projekt ponownie. 
    3. W odrębym oknie uruchamiamy ten sam projekt, natomiast za pomocą terminala przenosimy się do folderu `redidit_api`. 
    4. Przed włączeniem programu `app.py` konieczne jest zaimportowanie poszczególnych bibliotek.
-   5. Biblioteki niezbędne do prawidłowego funkcjonowania aplikacji to: `praw` -> `pip install praw`, `transformers`-> `pip install tranformers`, `scipy.special` -> `pip install scipy` , `flask` -> `pip install flask` , `flask.cors` -> `pip install flask-cors`.
-   6. Po pobraniu wszystkich potrzebnych bibliotek, za pośrednictwem komendy `python -    m flask run ` uruchamiamy server.
+   5. Biblioteki niezbędne do prawidłowego funkcjonowania aplikacji to: `praw` -> `pip install praw`, `transformers`-> `pip install tranformers`,                     `scipy.special` -> `pip install scipy` , `flask` -> `pip install flask` , `flask.cors` -> `pip install flask-cors`.
+   6. W folderze `redidit_api` należy utworzyć plik `secrets_1.py`.  W nim zaś musimy zainicjować 3 zmienne `client_id` `client_secret` `user_agent` w celu           uzyskania dostępu do `API Reddit`. 
+   7. Po pobraniu wszystkich potrzebnych bibliotek, za pośrednictwem komendy `python -m flask run ` uruchamiamy server.
 ## 5. Testy
 W ramach sprawdzenia prawidłowego funkcjonowania aplikacji przeprowadzone zostały następujące testy.
 
