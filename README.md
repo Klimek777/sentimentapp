@@ -38,3 +38,11 @@ Aby uruchomić projekt `RedditThoughts` musimy posiadać zainstalowane następuj
    5. Biblioteki niezbędne do prawidłowego funkcjonowania aplikacji to: `praw` -> `pip install praw`, `transformers`-> `pip install tranformers`, `scipy.special` -> `pip install scipy` , `flask` -> `pip install flask` , `flask.cors` -> `pip install flask-cors`.
    6. Po pobraniu wszystkich potrzebnych bibliotek, za pośrednictwem komendy `python -    m flask run ` uruchamiamy server.
 ## 5. Testy
+W ramach sprawdzenia prawidłowego funkcjonowania aplikacji przeprowadzone zostały następujące testy.
+
+1. `test_endpoint` - test mający na celu sprawdzić czy endpoint ‘/’ zwraca domyślną wartośc, którą jest ‘business’
+2. `test_custom_query` - test mający na celu sprawdzić czy po podaniu własnej wartości query, zwrócone zostaną odpowiednie wyniki 
+3. `test_sentiment_scores` - test mający na celu sprawdzić czy zwracane wyniki są w odpowiednich przedziałach liczbowych
+4. `test_model_loading` - test majacy na celu sprawdzić czy dane ładowadne są w odpowiedni sposób i zwracają odpowiednie dane
+5. `test_response_format` - test mający na celu sprawdzić czy zwracane są dane w odpowiednim formacie
+6. `test_sentiment_sums` - test mający na celu sprawdzić czy wyniki wszystkich kategorii dają wspólną sumę jaką jest jeden.
