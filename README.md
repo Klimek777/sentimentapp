@@ -33,9 +33,9 @@
 
 Aplikacja `RedditThoughts` została podzielona na stronę backend obłsugującą logikę biznesową i łączącą się z api aplikacji Reddit i stronę frontend zapewniającą wyświetlanie widoków dla użytkownika. 
 
-Do obsługi strony backendowej został użyty język `python z frameworkiem flask`, umożliwiający uruchamianie skryptu jako serwer. Do strony frontendowej został wykorzysytany `framework Fluttter`. 
+Do obsługi strony backendowej został użyty język `python + flask`, umożliwiający uruchamianie skryptu jako serwer. Do strony frontendowej został wykorzysytany `framework Fluttter`. 
 
-Strona frontendowa wysyła rządania bezpośrednio na adres pod którym uruchomiony jest serwer flask ze skryptem umożliwiającym obliczanie analizy sentymentu dla wybrnaego subreddita na platformie reddit. 
+Strona frontendowa wysyła rządania bezpośrednio na adres pod którym uruchomiony jest serwer flask ze skryptem umożliwiającym obliczanie analizy sentymentu dla wybrnaego subreddita na platformie Reddit. 
 
 Analiza sentymentu obliczana jest dla 100 najbardziej trendujących wpisów w danym subbreddicie dla ostatniego tygodnia od momentu wysłania rządania. 
 
