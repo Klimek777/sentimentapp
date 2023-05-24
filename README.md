@@ -54,7 +54,7 @@ Aby uruchomić projekt `RedditThoughts` musimy posiadać zainstalowane następuj
       - `flask` -> `pip install flask` 
       - `flask.cors` -> `pip install flask-cors`
       
-   6. W folderze `redidit_api` należy utworzyć plik `secrets_1.py`.  W nim zaś musimy zainicjować 3 zmienne `client_id` `client_secret` `user_agent` w celu           uzyskania dostępu do `API Reddit`. 
+   6. W folderze `redidit_api` należy utworzyć plik `secrets_1.py`.  W nim zaś musimy zainicjować 3 zmienne `client_id` `client_secret` `user_agent` w celu           uzyskania dostępu do `API Reddit`. W celu uzyskania dostępu wszelkie informacje można zaleźc pod tym linkiem https://www.reddit.com/wiki/api/.
    7. Po spełnieniu wszystkich powyższych wytycznych, za pośrednictwem komendy `python -m flask run ` uruchamiamy server.
 ## 6. Testy
 W ramach sprawdzenia prawidłowego funkcjonowania aplikacji przeprowadzone zostały następujące testy.
