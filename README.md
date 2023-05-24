@@ -35,9 +35,9 @@ Aplikacja `RedditThoughts` została podzielona na stronę backend obsługującą
 
 Do obsługi strony backendowej został użyty język `python + flask`, umożliwiający uruchamianie skryptu jako serwer. Do strony frontendowej został wykorzysytany `framework Flutter`. 
 
-Strona frontendowa wysyła rządania bezpośrednio na adres pod którym uruchomiony jest serwer flask ze skryptem umożliwiającym obliczanie analizy sentymentu dla wybrnaego subreddita na platformie Reddit. 
+Strona frontendowa wysyła żądania bezpośrednio na adres pod którym uruchomiony jest serwer flask ze skryptem umożliwiającym obliczanie analizy sentymentu dla wybrnaego subreddita na platformie Reddit. 
 
-Analiza sentymentu obliczana jest dla 100 najbardziej trendujących wpisów w danym subreddicie dla ostatniego tygodnia od momentu wysłania rządania. 
+Analiza sentymentu obliczana jest dla 100 najbardziej trendujących wpisów w danym subreddicie dla ostatniego tygodnia od momentu wysłania żądania. 
 
 Obliczona analiza zwracana jest do powłoki frontendowej, gdzie przedstawiana jest użytkownikowi w formie wykresów i licznika. Wykres pokazuje jaki procent stanowią wyrażenia negatywne, neutralne i pozytywne. Natomiast miara licznika oscyluje w granicach -1 i 1. Wynik licznika obliczany jest ze wzoru `((pozytywny sentyment - negatywny sentyment)/( pozytywny sentyment + negatywny sentyment))`
 
